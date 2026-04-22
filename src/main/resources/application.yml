@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: feature-flag-demo
+
+feature-flags:
+  backend: memory
+  flags:
+    user-details-v2: true
+    admin-export: false
+    batch-operations: true
+    count-users: true
+    health-check-enabled: true
+    new-user-api: false
+    beta-feature: false
+  api:
+    enabled: true
+
+logging:
+  level:
+    root: INFO
+    dev.ravi.featureflag: DEBUG
